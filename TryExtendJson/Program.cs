@@ -13,16 +13,6 @@ namespace TryExtendJson
         {
             Console.WriteLine("Hello World!");
 
-            KnownTypesBinder knownTypesBinder = new KnownTypesBinder
-            {
-                KnownTypes = new List<Type>
-                {
-                    typeof(TextBox),
-                    typeof(SignaturePad),
-                    typeof(CheckBox),
-                }
-            };
-
             DefaultContractResolver contractResolver = new DefaultContractResolver
             {
                 NamingStrategy = new SnakeCaseNamingStrategy()
